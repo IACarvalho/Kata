@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #ED8975;
+  --secondary-color: #F2D096;
+  --background-color: #f6f6f6;
+  --text-color: #333;
+  --black: #000;
+  --alert: #f44336;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--background-color);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--primary-color);
+}
+
+article {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.input {
+  width: 25rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+}
+
+#login-button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+#alert-email {
+  display: none;
+}
+
+#alert-password {
+  display: none;
+}
+
+.alert {
+  color: var(--alert);
+  font-size: 1rem;
+  font-weight: 700;
+}
